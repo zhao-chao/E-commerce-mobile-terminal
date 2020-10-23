@@ -1,0 +1,359 @@
+body {
+	max-width: 10rem;
+	min-width: 4.266667rem;
+	margin: 0 auto;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+		Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	background-color: #fafbfd;
+	padding-bottom: 1.333333rem;
+}
+
+@media screen and (min-width: 750px) {
+	html {
+		font-size: 75px !important;
+	}
+}
+
+// 顶部模块
+.top {
+	position: fixed;
+	z-index: 9;
+	top: 0;
+	width: 100%;
+	max-width: 10rem;
+	min-width: 4.266667rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 0.666667rem;
+	overflow: hidden;
+	padding-left: 0.08rem;
+	background: -webkit-linear-gradient(left, #ff6a52, #ff9655);
+	color: #fff;
+	font-size: 0.346667rem;
+
+	li:nth-child(1) {
+		display: flex;
+		justify-content: space-around;
+
+		div {
+			width: 0.133333rem;
+			height: 0.133333rem;
+			border-radius: 50%;
+			margin-right: 0.053333rem;
+			background-color: #fff;
+		}
+	}
+
+	li:nth-child(3) img {
+		width: 0.733333rem;
+		height: 0.333333rem;
+	}
+}
+
+// 头部模块
+header {
+	display: flex;
+	align-items: center;
+
+	margin-top: 0.666667rem;
+	width: 100%;
+	height: 1.413333rem;
+	background: url(../img/06-商品详情移动端app界面_01.png) no-repeat;
+	img {
+		margin-left: 0.586667rem;
+		width: 0.52rem;
+		height: 0.48rem;
+	}
+	span {
+		margin-left: 2.666667rem;
+		color: #fff;
+		font-size: 0.533333rem;
+	}
+}
+
+// 衣服图片部分
+.img {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 10rem;
+	height: 7.066667rem;
+	background-color: #fff;
+	img {
+		margin-top: 0.133333rem;
+		width: 5.8rem;
+		height: 6.146667rem;
+	}
+	ul {
+		margin-top: 0.266667rem;
+		display: flex;
+		li {
+			width: 0.133333rem;
+			height: 0.133333rem;
+			background-color: #cac8c8;
+			border-radius: 50%;
+		}
+		li:nth-child(2) {
+			margin: 0 0.2rem;
+		}
+		li:nth-child(1) {
+			background-color: #ff7a53;
+		}
+	}
+}
+
+// 衣服介绍模块
+.tab {
+	position: relative;
+	width: 100%;
+	height: 2.666667rem;
+	padding-left: 0.32rem;
+	h1 {
+		margin-top: 0.44rem;
+		font-size: 0.466667rem;
+		color: #515151;
+		font-weight: 400;
+		margin-bottom: 0.133333rem;
+	}
+	ul {
+		display: flex;
+		font-size: 0.36rem;
+		margin-top: 0.066667rem;
+		color: #bfbfbf;
+		margin-bottom: 0.4rem;
+
+		li:nth-child(2) {
+			width: 0.08rem;
+			height: 0.4rem;
+			margin: 0 0.333333rem;
+			margin-top: 0.066667rem;
+			background-color: #ff6b51;
+		}
+	}
+	span {
+		position: absolute;
+		bottom: 0.4rem;
+		left: 0.333333rem;
+		font-size: 0.493333rem;
+		color: #ff6e52;
+	}
+	a {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: absolute;
+		bottom: 0.293333rem;
+		right: 0.266667rem;
+		img {
+			width: 0.6rem;
+			height: 0.64rem;
+		}
+		p {
+			font-size: 0.32rem;
+			color: #c3c4c4;
+		}
+	}
+}
+
+// 特色模块
+.about {
+	display: flex;
+	align-items: center;
+	padding-left: 0.466667rem;
+	width: 100%;
+	justify-content: space-between;
+	height: 1.466667rem;
+	background-color: #fff6f7;
+
+	li {
+		display: flex;
+		flex: 1;
+		font-size: 0.32rem;
+		color: #b1b1b1;
+		&::before {
+			content: '';
+			margin-top: 0.026667rem;
+			margin-right: 0.213333rem;
+			width: 0.32rem;
+			height: 0.386667rem;
+			background: url(../img/06-商品详情移动端app界面_21.png) no-repeat;
+			background-size: 0.32rem 0.386667rem;
+		}
+	}
+	li:nth-child(2) {
+		&::before {
+			background: url(../img/06-商品详情移动端app界面_16.png) no-repeat;
+			background-size: 0.32rem 0.386667rem;
+		}
+	}
+	li:nth-child(3) {
+		&::before {
+			background: url(../img/06-商品详情移动端app界面_18.png) no-repeat;
+			background-size: 0.32rem 0.386667rem;
+		}
+	}
+	li:nth-child(4) {
+		&::before {
+			background: url(../img/06-商品详情移动端app界面_24.png) no-repeat;
+			background-size: 0.32rem 0.386667rem;
+		}
+	}
+}
+
+// 促销模块
+.promotion {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	height: 1.306667rem;
+	background-color: #fff;
+
+	li:nth-child(1) {
+		font-size: 0.4rem;
+		color: #525252;
+		margin-left: 0.333333rem;
+		margin-right: 0.933333rem;
+	}
+	li:nth-child(n + 2) {
+		font-size: 0.32rem;
+		color: #aeaeae;
+		margin-right: 0.466667rem;
+	}
+}
+
+// 店铺模块
+.dp {
+	display: flex;
+	position: relative;
+	align-items: center;
+	width: 100%;
+	height: 2.106667rem;
+	img {
+		width: 1.333333rem;
+		height: 1.333333rem;
+		margin-left: 0.32rem;
+	}
+	div {
+		margin-left: 0.266667rem;
+		h1 {
+			font-size: 0.4rem;
+			color: #2c2c2c;
+		}
+		p {
+			font-size: 0.293333rem;
+			color: #b6b6b6;
+		}
+	}
+	a {
+		position: absolute;
+		top: 0.853333rem;
+		right: 0.266667rem;
+		font-size: 0.4rem;
+		color: #ff6b52;
+
+		img {
+			width: 0.266667rem;
+			height: 0.413333rem;
+			margin-bottom: 0.106667rem;
+		}
+	}
+}
+
+// 付款
+.fk {
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 1.146667rem;
+	background-color: #ffeeee;
+
+	li:nth-child(-n + 2) {
+		display: flex;
+		height: 1.146667rem;
+		line-height: 1.146667rem;
+		font-size: 0.293333rem;
+
+		&::before {
+			content: '';
+			width: 0.373333rem;
+			height: 0.36rem;
+			margin-top: 0.4rem;
+			margin-left: 0.373333rem;
+			margin-right: 0.346667rem;
+			background: url(../img/06-商品详情移动端app界面_41.png);
+			background-size: 0.373333rem 0.36rem;
+		}
+	}
+	li:nth-child(2) {
+		&::before {
+			content: '';
+			width: 0.373333rem;
+			height: 0.36rem;
+			margin-top: 0.4rem;
+			margin-left: 0.373333rem;
+			margin-right: 0.346667rem;
+			background: url(../img/06-商品详情移动端app界面_38.png);
+			background-size: 0.373333rem 0.36rem;
+		}
+	}
+	li:nth-child(n + 3) {
+		position: absolute;
+		width: 100%;
+		top: 0;
+		right: 0;
+		a {
+			position: absolute;
+			padding: 0 0.533333rem;
+			top: 0;
+			right: 0;
+			line-height: 1.146667rem;
+			height: 1.146667rem;
+			font-size: 0.346667rem;
+			background: -webkit-linear-gradient(left, #ff6a52, #ff9554);
+			color: #fff;
+		}
+	}
+	li:nth-child(3) {
+		top: 0;
+		right: 2.4rem;
+		a {
+			background: #ffba36;
+		}
+	}
+}
+/* 底部模块 */
+
+footer {
+	position: fixed;
+	bottom: 0;
+	max-width: 10rem;
+	min-width: 4.266667rem;
+	display: flex;
+	width: 100%;
+	height: 1.333333rem;
+	background-color: #fff;
+
+	a {
+		position: relative;
+		flex: 1;
+
+		text-align: center;
+
+		img {
+			position: absolute;
+			top: 0.15rem;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 0.586667rem;
+			height: 0.586667rem;
+		}
+		p {
+			position: absolute;
+			bottom: 0.06rem;
+			left: 50%;
+			transform: translateX(-50%);
+			font-size: 0.346667rem;
+		}
+	}
+}
